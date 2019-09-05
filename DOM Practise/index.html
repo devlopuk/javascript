@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+
+    <h1 id="title">Hello</h1>
+
+    <input type="checkbox">
+
+    <button id="mybutton" style=":active color:red;">Click Me</button>
+
+    <ul>
+      <li class="list">
+        <a href="https://www.google.com" id="google">Google</a>
+      </li>
+      <li class="list">Second</li>
+      <li class="list" id="name" onclick="changeName()">Third
+
+<script>
+function changeName() {
+  document.getElementById("name").innerHTML = "Mark";
+}
+document.querySelector("li a").style.color="orange";
+document.querySelectorAll("li")[2].style.color="yellow";
+document.querySelector("#title").classList.add("new");
+document.querySelector("a").setAttribute("class", "new");
+</script>
+    </ul>
+
+  </body>
+</html>
